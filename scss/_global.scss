@@ -1,0 +1,103 @@
+@import "./variables";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:hover,
+*:focus {
+  outline: none;
+}
+
+body {
+  width: 100vw;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+section,
+main,
+footer {
+  width: 100%;
+  padding: 0 5%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+}
+
+.nav-link,
+.login-link {
+  transition: color 250ms ease-in;
+}
+
+.nav-btn,
+.btn,
+#submit-btn,
+.copy-btn {
+  cursor: pointer;
+  transition: opacity 250ms ease-in;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.login-link {
+  a {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+.nav-btn {
+  display: block;
+  color: $light-gray;
+  font-size: 1.2rem;
+  font-weight: $bold;
+  border-radius: 50px;
+  background-color: $cyan;
+}
+
+.heading {
+  color: $very-dark-blue;
+  font-size: 1.8rem;
+  font-weight: $bold;
+}
+
+.paragraph {
+  margin: 1.3em 0;
+  color: $grayish-violet;
+  font-size: 1.1rem;
+  font-weight: $medium;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0.2em 0 5em;
+  padding: 0.8em 2.8em;
+  color: $light-gray;
+  font-size: 1.3rem;
+  font-weight: $bold;
+  border-radius: 50px;
+  background-color: $cyan;
+}

@@ -1,0 +1,45 @@
+nav.active {
+  opacity: 1;
+  pointer-events: all;
+  width: 90%;
+  margin: auto;
+  padding: 1.3em 1.7em;
+  position: absolute;
+  top: 85%;
+  background-color: $dark-violet;
+  text-align: center;
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    li {
+      margin: 0.8em 0;
+      .nav-link {
+        color: $light-gray;
+      }
+    }
+    #nav-line {
+      height: 1px;
+      width: 100%;
+      margin: 1em 0;
+      background-color: $grayish-violet;
+    }
+  }
+  .nav-cta {
+    .login-link {
+      margin: 0.8em 0;
+      a {
+        color: $light-gray;
+      }
+    }
+    .nav-btn {
+      padding: 0.4em;
+    }
+  }
+}
+
+#url-input.alert {
+  border: 2px solid $red;
+  &::placeholder {
+    color: $red;
+  }
+}

@@ -1,0 +1,254 @@
+@media (min-width: 1000px) {
+  section,
+  main,
+  footer {
+    width: 100%;
+    padding: 0 10%;
+  }
+
+  header {
+    padding: 3em 10%;
+    nav {
+      margin-left: 2em;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      opacity: 1;
+      pointer-events: all;
+      .nav-links {
+        display: flex;
+        li {
+          margin: 0em 1em;
+          .nav-link {
+            color: $gray;
+            &:hover {
+              color: $dark-violet;
+            }
+          }
+        }
+        #nav-line {
+          display: none;
+        }
+      }
+      .nav-cta {
+        display: flex;
+        align-items: center;
+        .login-link {
+          a {
+            color: $gray;
+            &:hover {
+              color: $dark-violet;
+            }
+          }
+        }
+        .nav-btn {
+          padding: 0.3em 1.3em;
+          margin-left: 2em;
+        }
+      }
+    }
+    #burger {
+      display: none;
+    }
+  }
+  .hero-sec {
+    margin-bottom: 12rem;
+    flex-direction: row;
+    gap: 2em;
+    .hero-desc {
+      order: 1;
+      text-align: left;
+      margin-top: 2em;
+      .heading.large-heading {
+        font-size: 3.5rem;
+      }
+      .paragraph {
+        max-width: 40ch;
+        margin: 0.7em 0;
+        line-height: 1.5em;
+      }
+      .btn {
+        margin-top: 1.5em;
+        padding: 0.5em 2em;
+        color: $light-gray;
+      }
+    }
+    .hero-img {
+      order: 2;
+      img {
+        width: 140%;
+      }
+    }
+  }
+
+  main {
+    .shortener {
+      padding: 3em 4em;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 1.5em;
+      background-image: url("../images/bg-shorten-desktop.svg");
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+
+      #url-input,
+      #submit-btn {
+        width: unset;
+      }
+
+      #url-input {
+        margin: 0;
+        flex: 1;
+        font-size: 1.2rem;
+      }
+      #alert {
+        position: absolute;
+        bottom: 10%;
+      }
+      #submit-btn {
+        padding: 0.9em 1.7em;
+      }
+    }
+    .result-container {
+      .result-card {
+        margin: 1.3em 0;
+        padding: 0.8em 1.3em;
+        flex-direction: row;
+
+        .paragraph.url {
+          flex: 1;
+          text-align: left;
+          &::after {
+            content: none;
+          }
+        }
+        .paragraph.shorted-url {
+          margin-right: 1.5em;
+        }
+        .copy-btn {
+          width: unset;
+          padding: 0.4em 1.5em;
+          font-size: 1rem;
+        }
+      }
+    }
+    .article.normal {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .heading {
+        font-size: 2.5rem;
+      }
+      .paragraph {
+        max-width: 45ch;
+        margin: 0.3em 0;
+      }
+    }
+    .articles-container {
+      margin: 4em 0;
+      flex-direction: row;
+      text-align: left;
+      gap: 2em;
+
+      .article {
+        padding: 1.5em 1.8em;
+
+        &::after {
+          top: 50%;
+          left: -1em;
+          transform: translate(-50%, 50%);
+          height: 0.4em;
+          width: 2em;
+        }
+        &:first-of-type {
+          &::after {
+            content: none;
+          }
+        }
+
+        &:last-of-type {
+          &::after {
+            content: "";
+            top: 40%;
+          }
+        }
+        .article-img {
+          padding: 1em;
+          background-color: $dark-violet;
+          border-radius: 50px;
+          position: absolute;
+          top: -15%;
+          left: 20%;
+          img {
+            object-fit: fill;
+            min-width: 100%;
+          }
+        }
+        h3 {
+          font-size: 1.3rem;
+        }
+        p {
+          margin-top: 1em;
+        }
+      }
+      .article-1 {
+        margin-top: -5em;
+      }
+      .article-2 {
+        margin-top: 0em;
+      }
+      .article-3 {
+        margin-top: 5em;
+      }
+    }
+  }
+  .boost-sec {
+    background-image: url("../images/bg-boost-desktop.svg");
+
+    .boost-container {
+      .heading.white {
+        color: $light-gray;
+        font-size: 2.2rem;
+      }
+      .btn {
+        margin-top: 1.3em;
+      }
+    }
+  }
+  footer {
+    padding-bottom: 3em;
+    background-color: $very-dark-violet;
+    text-align: left;
+    flex-direction: row;
+    .col {
+      margin-top: 2.5em;
+    }
+    .col-1 {
+      flex: 1;
+    }
+    .col-2 {
+      flex-direction: row;
+      gap: 3em;
+      .sub-col {
+        .footer-heading {
+          margin: 0 0 0.8em;
+        }
+        .footer-links {
+          li {
+            margin-bottom: 0.5em;
+          }
+        }
+      }
+    }
+    .col-3 {
+      margin-left: 3em;
+      margin-bottom: 2em;
+      a {
+        margin: 0 0.5em;
+      }
+    }
+  }
+}
