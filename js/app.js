@@ -1,3 +1,15 @@
+const nav = document.querySelector("nav");
+const links = document.querySelectorAll(".nav-links li");
+const burger = document.getElementById("burger");
+const icon = document.querySelector("i");
+burger.addEventListener("click", () => {
+  links.forEach(() => {
+    nav.classList.toggle("active");
+    icon.classList.toggle("fa-bars");
+    icon.classList.toggle("fa-times");
+  });
+});
+
 const input = document.getElementById("url-input");
 const submitBtn = document.getElementById("submit-btn");
 

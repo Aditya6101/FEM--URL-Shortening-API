@@ -99,6 +99,7 @@ main {
   }
   .result-container {
     margin-top: -4.5em;
+    margin-bottom: 3em;
     .result-card {
       background-color: $white;
       margin: 1em 0;
@@ -116,6 +117,7 @@ main {
         font-weight: $medium;
       }
       .paragraph.url {
+        overflow-x: scroll;
         width: 100%;
         position: relative;
         &::after {
@@ -147,6 +149,9 @@ main {
 
   .article.normal {
     background-color: inherit;
+    .paragraph {
+      margin-bottom: 2em;
+    }
     &::after {
       content: none;
     }
@@ -173,6 +178,7 @@ main {
         background-color: $cyan;
         z-index: 0;
       }
+
       &:last-of-type {
         &::after {
           content: none;

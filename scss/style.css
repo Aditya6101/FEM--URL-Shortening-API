@@ -306,6 +306,7 @@ main .shortener #submit-btn {
 
 main .result-container {
   margin-top: -4.5em;
+  margin-bottom: 3em;
 }
 
 main .result-container .result-card {
@@ -335,6 +336,7 @@ main .result-container .result-card .paragraph.shorted-url {
 }
 
 main .result-container .result-card .paragraph.url {
+  overflow-x: scroll;
   width: 100%;
   position: relative;
 }
@@ -368,6 +370,10 @@ main .result-container .result-card .copy-btn {
 
 main .article.normal {
   background-color: inherit;
+}
+
+main .article.normal .paragraph {
+  margin-bottom: 2em;
 }
 
 main .article.normal::after {
