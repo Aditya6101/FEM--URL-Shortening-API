@@ -117,8 +117,9 @@ main {
         font-weight: $medium;
       }
       .paragraph.url {
+        width: 80%;
         overflow-x: scroll;
-        width: 100%;
+        overflow-y: hidden;
         position: relative;
         &::after {
           content: "";

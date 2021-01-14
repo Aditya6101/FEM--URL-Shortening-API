@@ -120,6 +120,7 @@
         .paragraph.url {
           flex: 1;
           text-align: left;
+          overflow-x: hidden;
           &::after {
             content: none;
           }

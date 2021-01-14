@@ -336,8 +336,9 @@ main .result-container .result-card .paragraph.shorted-url {
 }
 
 main .result-container .result-card .paragraph.url {
+  width: 80%;
   overflow-x: scroll;
-  width: 100%;
+  overflow-y: hidden;
   position: relative;
 }
 
@@ -702,6 +703,7 @@ footer .col-3 a:hover path {
         -ms-flex: 1;
             flex: 1;
     text-align: left;
+    overflow-x: hidden;
   }
   main .result-container .result-card .paragraph.url::after {
     content: none;
